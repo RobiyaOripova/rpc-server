@@ -6,14 +6,6 @@
         "json-prc",
         "api"
     ],
-    "homepage": "https://sajya.github.io",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexandr Chernyaev",
-            "email": "bliz48rus@gmail.com"
-        }
-    ],
     "require": {
         "ext-json": "*",
         "doctrine/annotations": "^2.0",
