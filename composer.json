@@ -1,5 +1,5 @@
 {
-    "name": "sajya/server",
+    "name": "robiya/rpc",
     "description": "Easy implementation of the JSON-RPC 2.0 server for the Laravel framework.",
     "keywords": [
         "rpc",
