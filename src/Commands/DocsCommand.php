@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Commands;
+namespace Robiya\Rpc\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
-use Sajya\Server\Docs;
+use Robiya\Rpc\Docs;
 
 class DocsCommand extends Command
 {
@@ -16,7 +16,7 @@ class DocsCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'sajya:docs {route}
+    protected $signature = 'rpc:docs {route}
                                        {--name=docs.html : Name of the generated documentation}
                                        {--path=/api/ : Path where included documentation files are located}';
 
@@ -48,7 +48,7 @@ class DocsCommand extends Command
 
         $docs = new Docs($route);
 
-        $html = view('sajya::docs', [
+        $html = view('rpc::docs', [
             'title'      => config('app.name'),
             'uri'        => config('app.url').$route->uri(),
             'procedures' => $docs->getAnnotations(),

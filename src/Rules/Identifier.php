@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Rules;
+namespace Robiya\Rpc\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 

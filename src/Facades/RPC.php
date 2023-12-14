@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Facades;
+namespace Robiya\Rpc\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Sajya\Server\Binding;
+use Robiya\Rpc\Binding;
 
 /**
  * Class RPC
@@ -13,7 +13,7 @@ use Sajya\Server\Binding;
  * @method static void bind(string $key, string|callable $binder)
  * @method static void model(string $key, string $class, \Closure|null $callback = null)
  *
- * @see \Sajya\Server\Binding
+ * @see \Robiya\Rpc\Binding
  */
 class RPC extends Facade
 {

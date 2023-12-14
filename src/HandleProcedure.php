@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server;
+namespace Robiya\Rpc;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -12,12 +12,12 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
-use Sajya\Server\Exceptions\InternalErrorException;
-use Sajya\Server\Exceptions\InvalidParams;
-use Sajya\Server\Exceptions\RpcException;
-use Sajya\Server\Exceptions\RuntimeRpcException;
-use Sajya\Server\Facades\RPC;
-use Sajya\Server\Http\Request;
+use Robiya\Rpc\Exceptions\InternalErrorException;
+use Robiya\Rpc\Exceptions\InvalidParams;
+use Robiya\Rpc\Exceptions\RpcException;
+use Robiya\Rpc\Exceptions\RuntimeRpcException;
+use Robiya\Rpc\Facades\RPC;
+use Robiya\Rpc\Http\Request;
 use Throwable;
 
 class HandleProcedure implements ShouldQueue

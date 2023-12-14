@@ -1,6 +1,6 @@
 {
     "name": "robiya/rpc",
-    "description": "Easy implementation of the JSON-RPC 2.0 server for the Laravel framework.",
+    "description": "JSON-RPC 2.0 server",
     "keywords": [
         "rpc",
         "json-prc",
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sajya\\Server\\": "src"
+            "Robiya\\Rpc\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sajya\\Server\\Tests\\": "tests"
+            "Robiya\\Rpc\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,16 +44,16 @@
     },
     "suggest": {
         "ext-zlib": "Required to compress the response into gzip",
-        "sajya/client": "HTTP(S) client for JSON-RPC 2.0"
+        "robiya/client": "HTTP(S) client for JSON-RPC 2.0"
     },
     "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
-                "Sajya\\Server\\ServerServiceProvider"
+                "Robiya\\Rpc\\ServerServiceProvider"
             ],
             "aliases": {
-                "RPC": "Sajya\\Server\\Facades\\RPC"
+                "RPC": "Robiya\\Rpc\\Facades\\RPC"
             }
         }
     }

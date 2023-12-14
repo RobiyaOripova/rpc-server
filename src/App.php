@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server;
+namespace Robiya\Rpc;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use ReflectionClass;
 use ReflectionMethod;
-use Sajya\Server\Exceptions\MethodNotFound;
-use Sajya\Server\Http\Parser;
-use Sajya\Server\Http\Request;
-use Sajya\Server\Http\Response;
+use Robiya\Rpc\Exceptions\MethodNotFound;
+use Robiya\Rpc\Http\Parser;
+use Robiya\Rpc\Http\Request;
+use Robiya\Rpc\Http\Response;
 
 class App
 {

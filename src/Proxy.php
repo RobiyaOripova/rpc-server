@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server;
+namespace Robiya\Rpc;
 
-use Sajya\Server\Http\Request;
+use Robiya\Rpc\Http\Request;
 
 interface Proxy
 {
     /**
      * The method used by request handlers.
      *
-     * @param \Sajya\Server\Http\Request $request
+     * @param Request $request
      *
      * @return mixed
      */

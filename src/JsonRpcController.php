@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server;
+namespace Robiya\Rpc;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

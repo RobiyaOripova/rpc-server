@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace {{ namespace }};
 
-use Sajya\Server\Procedure;
+use Robiya\Rpc\Procedure;
 use Illuminate\Http\Request;
 
 class {{ class }} extends Procedure

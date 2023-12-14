@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Middleware;
+namespace Robiya\Rpc\Middleware;
 
 use Closure;
 use Illuminate\Http\JsonResponse;

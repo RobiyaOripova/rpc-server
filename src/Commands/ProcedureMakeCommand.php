@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Commands;
+namespace Robiya\Rpc\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 

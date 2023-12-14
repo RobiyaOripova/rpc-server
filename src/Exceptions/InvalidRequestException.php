@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Exceptions;
+namespace Robiya\Rpc\Exceptions;
 
 class InvalidRequestException extends RpcException
 {

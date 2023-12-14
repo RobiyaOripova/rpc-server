@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Testing;
+namespace Robiya\Rpc\Testing;
 
 use Illuminate\Testing\TestResponse;
 

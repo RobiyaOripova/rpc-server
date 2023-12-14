@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Http;
+namespace Robiya\Rpc\Http;
 
 use Exception;
 use JsonSerializable;

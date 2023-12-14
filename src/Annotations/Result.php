@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Annotations;
+namespace Robiya\Rpc\Annotations;
 
 /**
  * @Annotation

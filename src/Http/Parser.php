@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server\Http;
+namespace Robiya\Rpc\Http;
 
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
-use Sajya\Server\Exceptions\InvalidParams;
-use Sajya\Server\Exceptions\InvalidRequestException;
-use Sajya\Server\Exceptions\ParseErrorException;
-use Sajya\Server\Rules\Identifier;
+use Robiya\Rpc\Exceptions\InvalidParams;
+use Robiya\Rpc\Exceptions\InvalidRequestException;
+use Robiya\Rpc\Exceptions\ParseErrorException;
+use Robiya\Rpc\Rules\Identifier;
 use TypeError;
 
 class Parser

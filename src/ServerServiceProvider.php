@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server;
+namespace Robiya\Rpc;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Sajya\Server\Commands\DocsCommand;
-use Sajya\Server\Commands\ProcedureMakeCommand;
+use Robiya\Rpc\Commands\DocsCommand;
+use Robiya\Rpc\Commands\ProcedureMakeCommand;
 
 class ServerServiceProvider extends ServiceProvider
 {
@@ -55,10 +55,10 @@ class ServerServiceProvider extends ServiceProvider
     {
         $path = __DIR__.'/../views';
 
-        $this->loadViewsFrom($path, 'sajya');
+        $this->loadViewsFrom($path, 'robiya');
 
         $this->publishes([
-            $path => resource_path('views/vendor/sajya'),
+            $path => resource_path('views/vendor/robiya'),
         ], 'views');
 
         return $this;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sajya\Server;
+namespace Robiya\Rpc;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Illuminate\Config\Repository;
@@ -13,8 +13,8 @@ use Illuminate\Support\Stringable;
 use phpDocumentor\Reflection\DocBlockFactory;
 use ReflectionClass;
 use ReflectionMethod;
-use Sajya\Server\Annotations\Param;
-use Sajya\Server\Annotations\Result;
+use Robiya\Rpc\Annotations\Param;
+use Robiya\Rpc\Annotations\Result;
 
 class Docs
 {
