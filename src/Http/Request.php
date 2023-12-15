@@ -89,7 +89,6 @@ class Request implements JsonSerializable
         if (null !== ($id = $this->getId())) {
             $jsonArray['id'] = $id;
         }
-
         return $jsonArray;
     }
 
@@ -194,6 +193,6 @@ class Request implements JsonSerializable
      */
     public function isNotification(): bool
     {
-        return empty($this->getId());
+        return empty($this->getParams());
     }
 }

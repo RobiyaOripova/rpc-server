@@ -42,7 +42,7 @@ class Response implements JsonSerializable
 
         return tap(
             new self(),
-            fn (Response $response) => $response->setId($request->getId())
+            fn(Response $response) => $response->setId($request->getId())
                 ->setVersion($request->getVersion())
                 ->setResult($result)
         );
@@ -50,17 +50,19 @@ class Response implements JsonSerializable
 
     public function jsonSerialize(): array
     {
-        $response = ['id' => $this->getId()];
+
 
         if ($this->isError()) {
+            $response = ['status' => false];
             $response['error'] = $this->getError();
+            $response['result'] = null;
         } else {
+            $response = ['status' => true];
             $response['result'] = $this->getResult();
+            $response['error'] = null;
+
         }
 
-        if (null !== ($version = $this->getVersion())) {
-            $response['jsonrpc'] = $version;
-        }
 
         return $response;
     }
@@ -159,6 +161,6 @@ class Response implements JsonSerializable
 
     public function isNotification(): bool
     {
-        return empty($this->getId()) && $this->getError() === null;
+        return false;
     }
 }

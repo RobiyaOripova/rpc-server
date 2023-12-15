@@ -74,18 +74,9 @@ abstract class RpcException extends RuntimeException implements JsonSerializable
     public function jsonSerialize(): array
     {
         $message = [
-            'code'    => $this->getCode(),
             'message' => $this->getMessage(),
             'data'    => $this->getData(),
         ];
-
-        if (config('app.debug', false)) {
-            $message = array_merge($message, [
-                'file'  => $this->getFile(),
-                'line'  => $this->getLine(),
-                'trace' => $this->getTraceAsString(),
-            ]);
-        }
 
         return $message;
     }

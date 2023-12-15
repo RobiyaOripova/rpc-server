@@ -51,7 +51,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 5.0.1 - 2022-04-25
 
 ### Fixed
-
 - Set $data of InvalidRequestException [#32](https://github.com/sajya/server/issues/32)
 
 ## 5.0.0 - 2022-02-10

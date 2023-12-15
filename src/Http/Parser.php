@@ -166,10 +166,8 @@ class Parser
     public static function rules(): array
     {
         return [
-            'jsonrpc' => 'required|in:"2.0"',
             'method'  => 'required|string',
             'params'  => 'array',
-            'id'      => new Identifier(),
         ];
     }
 }
